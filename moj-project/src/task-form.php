@@ -39,8 +39,8 @@
         </form>
     </main>
 
-    <footer>
-        <p>&copy; 2024 Task Manager - MOJ. All rights reserved.</p>
-    </footer>
+	<footer>
+		<p>&copy; 2025 Task Manager - All rights reserved.</p>
+	</footer>
 </body>
 </html>

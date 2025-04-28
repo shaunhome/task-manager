@@ -48,6 +48,9 @@ mysqli_stmt_execute($stmt);
         </div>
     </main>
 </body>
+	<footer>
+		<p>&copy; 2025 Task Manager - All rights reserved.</p>
+	</footer>	
 </html>
 
 

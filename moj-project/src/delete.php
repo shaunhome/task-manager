@@ -42,4 +42,7 @@ mysqli_query($link, $query);
         </div>
     </main>
 </body>
+	<footer>
+		<p>&copy; 2025 Task Manager - All rights reserved.</p>
+	</footer>
 </html>

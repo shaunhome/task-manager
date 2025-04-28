@@ -28,7 +28,7 @@ $result = mysqli_query($link, $query);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task Manager - Dashboard</title>
+    <title>Task Manager</title>
     <link rel="stylesheet" href="../assets/css/styles.css">
     <style>
         /* Modal Styles */
@@ -157,39 +157,6 @@ $result = mysqli_query($link, $query);
         </form>
     </div>
 </div>
-
-<script>
-    // Get the modal
-var modal = document.getElementById("taskModal");
-var span = document.getElementsByClassName("close")[0];
-
-// Get all edit buttons
-var editButtons = document.querySelectorAll('.edit-task-btn');
-
-// Add click event listeners to each button
-editButtons.forEach(function(button) {
-    button.addEventListener('click', function() {
-        var taskId = button.getAttribute('data-task-id');  // Get task ID
-        var taskTitle = button.getAttribute('data-task-title');  // Get task title
-        var modalMessage = "You are about to edit the task: " + taskTitle + " (ID: " + taskId + ")";
-        
-        document.getElementById('taskModalMessage').innerText = modalMessage; // Set modal message
-        document.getElementById('taskIdInput').value = taskId; // Set task ID in hidden input field
-        modal.style.display = "block"; // Show the modal
-    });
-});
-
-// When the user clicks on the close button, close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-
+<script src="../assets/js/task-display.js"></script>
 </body>
 </html>

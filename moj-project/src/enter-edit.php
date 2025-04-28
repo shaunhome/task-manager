@@ -15,7 +15,16 @@ if (!$task) {
 }
 ?>
 
-<link rel="stylesheet" href="../assets/css/styles.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Task Edit</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+
 <main>
     <h2>Edit Task</h2>
     <form action="do-edit.php" method="POST">
@@ -26,7 +35,7 @@ if (!$task) {
         <textarea id="description" name="description"><?= htmlspecialchars($task['description']) ?></textarea>
 
         <label for="due_datetime">Due Date and Time:</label>
-        <input type="datetime-local" id="due_datetime" name="due_datetime" value="<?= date('Y-m-d\TH:i', strtotime($task['due_datetime'])) ?>" required min="<?= date('Y-m-d\TH:i') ?>"required>
+        <input type="datetime-local" id="due_datetime" name="due_datetime" value="<?= date('Y-m-d\TH:i', strtotime($task['due_datetime'])) ?>" required min="<?= date('Y-m-d\TH:i') ?>">
 
         <label for="status">Status:</label>
         <select id="status" name="status" required>
@@ -43,3 +52,9 @@ if (!$task) {
         <input type="submit" value="Update Task">
     </form>
 </main>
+
+</body>
+	<footer>
+    <p>&copy; 2025 Task Manager - All rights reserved.</p>
+	</footer>
+</html>

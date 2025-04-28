@@ -230,4 +230,5 @@ $result = mysqli_query($link, $query);
 	<script src="../assets/js/search-bar.js"></script>
 
 </body>
+
 </html>
